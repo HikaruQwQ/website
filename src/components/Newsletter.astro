@@ -4,9 +4,9 @@
   <div class="container-custom max-w-4xl">
     <div class="card p-8 md:p-12 border border-gray-200 dark:border-gray-700">
       <div class="text-center mb-8">
-        <h2 class="mb-4 text-gray-900 dark:text-white">Stay Updated</h2>
+        <h2 class="mb-4 text-gray-900 dark:text-white">时刻保持最新状态</h2>
         <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Subscribe to our newsletter to receive the latest updates, tips, and exclusive offers.
+          订阅我们的新闻和更新变动，以保持自己是最先知道的那一批用户~
         </p>
       </div>
       
@@ -14,12 +14,12 @@
         <div class="relative" x-show="!submitted">
           <div class="flex flex-col sm:flex-row gap-4">
             <div class="flex-grow">
-              <label for="email" class="sr-only">Email address</label>
+              <label for="email" class="sr-only">电子邮箱地址</label>
               <input 
                 type="email" 
                 id="email" 
                 x-model="email"
-                placeholder="Enter your email" 
+                placeholder="键入邮箱地址" 
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
                 required
               />
@@ -30,18 +30,18 @@
               class="btn-primary whitespace-nowrap"
               x-on:click.prevent="
                 if (!email) {
-                  error = 'Please enter your email';
+                  error = '请输入有效的电子邮箱地址';
                   return;
                 }
                 if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                  error = 'Please enter a valid email';
+                  error = '请输入有效的电子邮箱地址';
                   return;
                 }
                 error = '';
                 submitted = true;
               "
             >
-              Subscribe Now
+              立即订阅
             </button>
           </div>
         </div>
@@ -50,15 +50,15 @@
           <svg class="w-12 h-12 text-primary-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Thank You for Subscribing!</h3>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">感谢您的订阅！</h3>
           <p class="text-gray-600 dark:text-gray-300">
-            You've been added to our newsletter. We'll keep you updated with the latest news and offers.
+            您已经加入了我们的邮件通知名单。我们会在有更新时第一时间通知您。
           </p>
         </div>
       </form>
       
       <div class="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
-        By subscribing, you agree to our <a href="#" class="text-primary-600 dark:text-primary-400 hover:underline">Privacy Policy</a> and <a href="#" class="text-primary-600 dark:text-primary-400 hover:underline">Terms of Service</a>.
+        当您订阅通知时，您默认同意 <a href="#" class="text-primary-600 dark:text-primary-400 hover:underline">隐私政策</a> 和 <a href="#" class="text-primary-600 dark:text-primary-400 hover:underline">用户协议</a>.
       </div>
     </div>
   </div>
