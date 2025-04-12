@@ -1,53 +1,45 @@
 ---
 const plans = [
   {
-    name: "Starter",
-    price: 29,
-    description: "Perfect for small teams and startups",
+    name: "Open Source",
+    price: 0,
+    description: "适合每一个无特殊需求的普通用户",
     features: [
-      "Up to 5 team members",
-      "10GB storage",
-      "Basic analytics",
-      "24/7 email support",
-      "API access"
+      "软件全部基础功能",
+      "有限社区支持"
     ],
-    cta: "Start Free Trial",
+    cta: "咨询客服",
     popular: false,
     color: "primary"
   },
   {
-    name: "Professional",
-    price: 79,
-    description: "Ideal for growing businesses",
+    name: "Plus",
+    price: 2.9,
+    description: "让你的数据更安全",
     features: [
-      "Up to 20 team members",
-      "50GB storage",
-      "Advanced analytics",
-      "Priority support",
-      "API access",
-      "Custom integrations",
-      "Team collaboration tools"
+      "软件全部基础功能",
+      "10GB在线存储空间",
+      "在线数据备份/恢复",
+      "优先客户支持",
+      "高级素材库访问",
     ],
-    cta: "Start Free Trial",
+    cta: "咨询客服",
     popular: true,
     color: "secondary"
   },
   {
-    name: "Enterprise",
-    price: 199,
-    description: "For large organizations with complex needs",
+    name: "Max",
+    price: 99,
+    description: "为多用户群体定制的高级计划",
     features: [
-      "Unlimited team members",
-      "500GB storage",
-      "Enterprise analytics",
-      "Dedicated account manager",
-      "API access",
-      "Custom integrations",
-      "Team collaboration tools",
-      "Advanced security features",
-      "Custom branding"
+      "至多100人同时共享计划",
+      "2TB在线存储空间",
+      "在线数据备份/恢复",
+      "优先客户支持",
+      "高级素材库访问",
+      "优先访问保证",
     ],
-    cta: "Contact Sales",
+    cta: "咨询客服",
     popular: false,
     color: "accent"
   }
@@ -58,11 +50,11 @@ const plans = [
   <div class="container-custom">
     <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="inline-block px-4 py-1 rounded-full bg-accent-100 dark:bg-accent-900 text-accent-600 dark:text-accent-300 font-medium text-sm mb-4">
-        Pricing Plans
+        订阅计划
       </span>
-      <h2 class="mb-6 text-gray-900 dark:text-white">Simple, Transparent Pricing</h2>
+      <h2 class="mb-6 text-gray-900 dark:text-white">高性价比的高级订阅计划</h2>
       <p class="text-gray-600 dark:text-gray-300">
-        Choose the plan that works best for your business. All plans include a 14-day free trial.
+        选择适合你的计划享受全部功能
       </p>
     </div>
     
@@ -74,14 +66,14 @@ const plans = [
         >
           {plan.popular && (
             <div class={`absolute top-0 right-0 bg-${plan.color}-500 text-white px-4 py-1 text-sm font-medium rounded-bl-lg rounded-tr-lg`}>
-              Most Popular
+              最热销
             </div>
           )}
           
           <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{plan.name}</h3>
           <div class="mb-4">
             <span class="text-4xl font-bold text-gray-900 dark:text-white">${plan.price}</span>
-            <span class="text-gray-500 dark:text-gray-400">/month</span>
+            <span class="text-gray-500 dark:text-gray-400">/月</span>
           </div>
           <p class="text-gray-600 dark:text-gray-300 mb-6">{plan.description}</p>
           
@@ -107,8 +99,8 @@ const plans = [
     </div>
     
     <div class="mt-12 text-center">
-      <p class="text-gray-600 dark:text-gray-300 mb-2">Need a custom plan for your specific needs?</p>
-      <a href="/contact" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Contact our sales team</a>
+      <p class="text-gray-600 dark:text-gray-300 mb-2">不知道如何选择合适的计划?</p>
+      <a href="/contact" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">联系商务经理</a>
     </div>
   </div>
 </section>
