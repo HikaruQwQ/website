@@ -1,0 +1,148 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout title="关于我们 - 每日手帐">
+  <Header />
+  <main>
+    <HeroSection 
+      title="关于每日手帐" 
+      highlightText="每日手帐"
+      description="HaoduStudio(中国)隶属于奈索星联 Nexaorion Group."
+    />
+    
+    <section class="py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+          <div>
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              我们的故事
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">一个平均年龄不到17周岁的青年团体</h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              最早版本的“每日手帐”离不开好读游独及其伙伴的团结协作，团队内仅有不到5个人。但经过不断发展，HaoduStudio(中国)已经发展成为核心开发团队2人、美工团队11人的小型团队。相比于其他团队，我们的团队成员平均年龄不到17周岁，甚至有部分成员仍在读初中。
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              近几年来，我们不断进行技术创新，在新版本软件内加入诸多创新功能，致力于改善青少年在腕表上撰写手帐的体验。我们希望通过我们的努力，帮助更多的青少年在腕表上记录生活点滴，提升他们的生活质量，了解自我。
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              同时，我们也在不断发展软件附属IP产业。我们正在计划投资生产IP周边，尽可能收获客观收益，以在未来提供更优质的服务。
+            </p>
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-xl">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Sassify Team" class="w-full h-auto" />
+          </div>
+        </div>
+        
+        <div class="mb-24">
+          <div class="text-center mb-12">
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              团队使命
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">我们团队的信仰</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              希望通过我们的努力，帮助更多的青少年改善生活，享受当下。
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">隐私优先</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                我们提供的软件/在线服务均以“隐私保护”占第一位，尽可能为用户提供隐私保护锁等相关功能。严格遵守隐私政策，确保用户数据的安全和隐私。
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">快速回复</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                我们团队拥有极高的回复效率，社交群组内可保证最快5min的回复时效，电子邮箱可保证24h的回复时效，领先于其他团队。
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">客户服务</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                我们面向不同设备用户均配备专业客服，并对接相应厂商负责人，第一时间反馈设备问题给制造厂商。
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-24">
+          <div class="text-center mb-12">
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              人员一览
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">了解我们的主要成员</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              没有他们，就没有现在的每日手帐。
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+                <img src="https://cn-sh.static.nextsay.cn/IMAGE/avatar/michaelzhan.jpg" alt="Michael Chen" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Michael Zhan</h3>
+              <p class="text-primary-600 dark:text-primary-400 mb-2">Co-Founder</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">
+                每日手帐项目创始人，主要开发者
+              </p>
+            </div>
+            
+            <div class="text-center">
+              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+                <img src="https://cn-sh.static.nextsay.cn/IMAGE/avatar/zhunote.jpg" alt="Sarah Johnson" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Hongrui Zhu</h3>
+              <p class="text-primary-600 dark:text-primary-400 mb-2">Co-Founder & Customer Service</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">
+                HaoduStudio(中国)联合创始人，客户服务和市场运营
+              </p>
+            </div>
+            
+            <div class="text-center">
+              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+                <img src="https://cn-sh.static.nextsay.cn/IMAGE/avatar/artteam.jpg" alt="David Rodriguez" class="w-full h-full object-cover" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">美工团队</h3>
+              <p class="text-primary-600 dark:text-primary-400 mb-2">Artist</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">
+                来自全国各地的志愿者们
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">加入我们</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+            我们期待您加入我们的团队。
+          </p>
+          <a href="/career" class="btn-primary">查看</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout> 

@@ -1,0 +1,124 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout title="工作机会 - 每日手帐">
+  <Header />
+  <main>
+    <HeroSection 
+      title="加入奈索星联" 
+      highlightText="奈索星联"
+      description="我们正持续寻找适合我们团队的人才。"
+    />
+    
+    <section class="py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">为什么选择我们？</h2>
+          
+          <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex items-center mb-4">
+                <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 mr-4">
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">弹性工作时间</h3>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                你可以在任何地方任何时间开展工作，只要在ddl之前完成任务即可。
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex items-center mb-4">
+                <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 mr-4">
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">先进的开发工具</h3>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                奈索星联会提供专业的开发辅助工具和编译环境，帮助你更高效地完成工作。
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex items-center mb-4">
+                <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 mr-4">
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">具有亲和力的团队氛围</h3>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                无论你是大孩小孩，我们都是一家人。团队内会进行利益分成，高达40%的分成比例。
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex items-center mb-4">
+                <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 mr-4">
+                  <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">健康第一</h3>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                尽管您身体不适/出现事故，我们都会尊重您的选择。团队福利照常享有。
+              </p>
+            </div>
+          </div>
+          
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">招募中的职位</h2>
+          
+          <div class="space-y-6 mb-16">
+            <!-- Job Listing 1 -->
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 md:mb-0">淘宝网市场运营</h3>
+                <span class="inline-block px-3 py-1 text-sm font-medium rounded-full bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300">
+                  远程工作
+                </span>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                我们正在寻找具有时间和一定运营经验的淘宝网(中国)市场运营人员，需要担任客服和美工职责（美工可选）。
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                  淘宝网运营经验
+                </span>
+                <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                  客服经验
+                </span>
+                <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                  美工技能（如有）
+                </span>
+                <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                  不少于2年经验
+                </span>
+              </div>
+              <a href="mailto:service@nexaorion.tech" class="btn-secondary">投递简历</a>
+            </div>
+            
+          
+          <div class="text-center">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">没有找到适合你的岗位？</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+              如果您对您的技能信心十足，或者您有其他的想法和建议，请随时与我们联系。我们欢迎任何有才华的人加入我们的团队。
+            </p>
+            <a href="/contact" class="btn-primary">联系我们</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
